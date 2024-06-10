@@ -6,6 +6,8 @@
     <title>Redes digitales - Victor & Erick</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+
 </head>
 <body>
     <!-- Navbar -->
@@ -30,16 +32,154 @@
     </nav>
  
     <!-- Main content -->
-    <h1>Práctica: </h1><br>
+    <h1>Práctica: Creación de una pagina web - repositorio web.</h1><br>
     <h2>Resumen</h1><br>
+    <p>Creamos una página web para documentar y mostrar nuestros trabajos. 
+        Este sitio web estará desarrollado utilizando HTML para la estructura, CSS para el 
+        estilo, y JavaScript para la interactividad. Además, subimos el proyecto a GitHub
+         para mantener un control de versiones y permitir un acceso fácil y colaborativo.</p>
     <h2>Introducción</h2><br>
+    <p>La meta es desarrollar una página web que nos permita documentar y presentar nuestros 
+        trabajos de manera organizada y profesional. Utilizaremos HTML para construir la 
+        estructura de la página, CSS para diseñar y estilizar los elementos visuales, y 
+        JavaScript para añadir funcionalidad interactiva. Este proyecto no solo nos ayudará a 
+        mantener un registro de nuestros progresos, sino que también servirá como una plataforma
+         para mostrar nuestras habilidades en desarrollo web. Subiremos el proyecto a GitHub, 
+         aprovechando las capacidades de control de versiones y colaboración que ofrece la 
+         plataforma.</p>
     <h2>Materiales</h2><br>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Visual Studio Code</li>
+        <li>Github</li>
+        <li>Git</li>
+    </ul>
     <h2>Desarrollo</h2><br>
-    <h3>Objetivo general</h3><br>
+    <h3>Cómo Crear y Subir una Página Web a GitHub</h3>
+    
+    <h4>1. Crear la estructura de la página con HTML</h4>
+    <p>HTML (HyperText Markup Language) es el lenguaje de marcado que usamos para estructurar y organizar el contenido de nuestra página web.</p>
+    <pre>
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="es"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Mi Página Web&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Bienvenido a mi página web&lt;/h1&gt;
+                &lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    
+    <h4>2. Estilizar la página con CSS</h4>
+    <p>CSS (Cascading Style Sheets) es el lenguaje que usamos para aplicar estilos a nuestra página web, como colores, fuentes y diseño.</p>
+    <pre>
+        <code>
+            /* Archivo styles.css */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                color: #333;
+                text-align: center;
+                padding: 20px;
+            }
+            h1 {
+                color: #007BFF;
+            }
+        </code>
+    </pre>
+    <p>No olvides enlazar tu archivo CSS en el HTML:</p>
+    <pre>
+        <code>
+            &lt;head&gt;
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+            &lt;/head&gt;
+        </code>
+    </pre>
+    
+    <h4>3. Añadir interactividad con JavaScript</h4>
+    <p>JavaScript es el lenguaje de programación que nos permite añadir interactividad a nuestra página web.</p>
+    <pre>
+        <code>
+            /* Archivo script.js */
+            document.addEventListener('DOMContentLoaded', function() {
+                alert('Página cargada!');
+            });
+        </code>
+    </pre>
+    <p>No olvides enlazar tu archivo JavaScript en el HTML:</p>
+    <pre>
+        <code>
+            &lt;body&gt;
+                &lt;script src="script.js"&gt;&lt;/script&gt;
+            &lt;/body&gt;
+        </code>
+    </pre>
+    
+    <h4>4. Subir el proyecto a GitHub</h4>
+    <p>GitHub es una plataforma para alojar y gestionar proyectos de desarrollo con Git. A continuación, los pasos básicos para subir tu proyecto:</p>
+    <ol>
+        <li>Crea una cuenta en <a href="https://github.com/" target="_blank">GitHub</a> si aún no tienes una.</li>
+        <li>Instala Git en tu computadora desde <a href="https://git-scm.com/" target="_blank">aquí</a>.</li>
+        <li>Inicializa un repositorio en tu proyecto:
+            <pre>
+                <code>
+                    git init
+                    git add .
+                    git commit -m "Primer commit"
+                    git branch -M main
+                </code>
+            </pre>
+        </li>
+        <li>Crea un nuevo repositorio en GitHub y copia la URL del repositorio.</li>
+        <li>Agrega el repositorio remoto y sube tu proyecto:
+            <pre>
+                <code>
+                    git remote add origin https://github.com/tu-usuario/nombre-repositorio.git
+                    git push -u origin main
+                </code>
+            </pre>
+        </li>
+    </ol>
     <h2>Resultados</h2><br>
-    <h2>Conclusiones</h2><br>
+    <h4>Página de Victor: </h4>
+    <img src="/assets/Lab/Practica2/Images/pagina_victor.jpg" alt="" width="70%"><br><br>
+    <p>Puedes consultar la página de Victor en replit en el siguiente <a href="https://replit.com/join/afqalyifja-yumnology" download="">link</a>. O bien 
+    puedes consultar su página de github en el siguiente <a href="https://yumnology.github.io/lab-redes-v1/" download="">link</a>.</p>
+    <h4>Página de Erick: </h4>
+    <img src="/assets/Lab/Practica2/Images/pagina_erick.jpg" alt="" width="70%"><br><br>
+    <p>Puedes consultar la página de Erick en replit en el siguiente <a href="https://replit.com/@ErickGuevara1/redesErick?v=1#index.html" download="">link</a>. O bien 
+        puedes consultar su página de github en el siguiente <a href="https://erickg09.github.io/Redes_verano_2024/" download="">link</a>.</p>
+    <h5>El siguiente video es una muestra de como subir cambios a nuestro repositorio usando Git</h5>
+    <video width="640" height="360" controls>
+        <source src="/assets/Lab/Practica2/Videos/output.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br><br>
+    <h5>Pasos para subir cambios a Github</h5>
+    <ul>
+        <li><strong>git add .</strong> - Agrega todos los cambios realizados en el directorio actual al área de preparación.</li>
+        <li><strong>git commit -m "mensaje de commit"</strong> - Guarda los cambios añadidos con un mensaje descriptivo del commit.</li>
+        <li><strong>git pull origin main</strong> - Actualiza tu rama local con los últimos cambios del repositorio remoto.</li>
+        <li><strong>git push origin main</strong> - Sube los cambios confirmados (committed) a la rama principal (main) del repositorio remoto en GitHub.</li>
+    </ul>
+    
+    
+    
+    
+    
+        <h2>Conclusiones</h2><br>
+    <p>Al completar este proyecto, logramos crear una página web básica utilizando HTML para la estructura, CSS para el diseño y JavaScript para la interactividad. Subimos el proyecto a GitHub, lo cual nos permitió gestionar el control de versiones y facilitar la colaboración. Este proceso nos brindó una experiencia valiosa en el desarrollo web y en el uso de herramientas esenciales para el desarrollo colaborativo de software.</p>
     <h2>Referencias</h2><br>
+    <p>No hay referencias</p>
     <h2>Descargables</h2><br>
+    <p>No hay descargables</p>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

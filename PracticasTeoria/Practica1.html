@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes digitales - Victor & Erick</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portafolio web - Redes digitales de datos y Laboratorio.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Informacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+ 
+    <!-- Main content -->
+    <h1>Práctica: Ejercicios con Arduino</h1><br>
+    <h2>Resumen</h1><br>
+        <p>En esta práctica, utilizamos Arduino en Tinkercad para realizar varios ejercicios que nos permiten comprender y aplicar conceptos básicos de programación y electrónica. A través de esta plataforma de simulación, desarrollamos diferentes proyectos que involucran el uso de LEDs, resistencias, botones, y otros componentes electrónicos. Cada ejercicio está diseñado para fortalecer nuestras habilidades en la programación de Arduino y en la creación de circuitos electrónicos.</p>
+    <h2>Introducción</h2><br>
+    <p>La práctica con Arduino en Tinkercad nos proporciona un entorno seguro y accesible para aprender y experimentar con la programación de microcontroladores y la creación de circuitos electrónicos. Tinkercad es una herramienta en línea que permite simular proyectos de Arduino sin necesidad de hardware físico, lo cual es ideal para estudiantes y principiantes. En esta serie de ejercicios, nos enfocamos en desarrollar proyectos que incluyen el control de LEDs, la lectura de entradas digitales, y la implementación de circuitos básicos. Estos ejercicios nos ayudarán a familiarizarnos con la plataforma Arduino y a entender mejor cómo interactúan el hardware y el software en proyectos de electrónica.</p>
+    <h2>Materiales</h2><br>
+    <h2>Desarrollo</h2><br>
+    <h2>Objetivo general de ejercicio 1</h2>
+    <p>Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta primera parte de un contador de pulsos en específico.</p>
+    
+    <h2>Objetivos Específicos</h2>
+    <ul>
+        <li>Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica. La función debe tener la siguiente estructura: <code>void pulsos(int cantidad, int duración)</code>. (Comprobar el correcto funcionamiento utilizando el osciloscopio).</li>
+        <li>Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.</li>
+        <li>Utilizando ambos Arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un número de pulsos específicos a la velocidad de 1 pulso por segundo, 10, 100 y 1000 pulsos por segundo.</li>
+    </ul>
+
+
+    <h2>Objetivo general de ejercicio 2</h2>
+    <p>Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta segunda parte de un contador de tiempo de los pulsos.</p>
+    
+    <h2>Objetivos Específicos</h2>
+    <ul>
+        <li>Utilizando 1 Arduino, diseñar una función que permita enviar un pulso con un tiempo en High determinado. (Comprobar el correcto funcionamiento utilizando el osciloscopio).</li>
+        <li>Utilizando un segundo Arduino, diseñar una función que permita contar el tiempo de la duración de un pulso que ha recibido del primer Arduino (Variación de 0 a 1) y mostrarlo en el monitor serial.</li>
+        <li>Utilizando ambos Arduinos, conectar un pin de los Arduinos para enviar una serie de 4 bits desde el primer Arduino al segundo y mostrar los bits enviados por el monitor serial. Tomar en consideración que la serie de 4 bits debe comenzar con un bit en High. Cada uno de los bits debe tener un tamaño específico, de tal manera que el segundo Arduino sabe que tiene que esperar 4 pulsos de un tamaño determinado y que esta serie de pulsos comienza con el cambio de 0 a 1.</li>
+    </ul>
+
+    <h2>Objetivo general de ejercicio 3</h2>
+    <p>Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación, en esta tercera parte de un convertidor a binario.</p>
+    
+    <h2>Objetivos Específicos</h2>
+    <ul>
+        <li>Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un potenciómetro en un arreglo de variables que representen el número en binario de 8 bits, de tal forma que podamos ver cada uno de los valores como salidas digitales en los pines del Arduino.</li>
+        <li>Utilizando un segundo Arduino, diseñar una función que permita convertir el valor en binario obtenido de 8 puertos digitales del Arduino en un valor entero en sistema decimal y mostrarlo en el monitor serial. Utilizar el primer Arduino para generar los valores digitales en binario y el segundo Arduino para decodificarlos y convertirlos en un valor decimal.</li>
+    </ul>
+
+
+    <h2>Objetivo genera de ejercicio 4</h2>
+    <p>Conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación asíncrono.</p>
+    
+    <h2>Objetivos Específicos</h2>
+    <ul>
+        <li>Utilizando 1 Arduino, diseñar un sistema que permita convertir el valor analógico de un potenciómetro en un arreglo de variables que representen el número en binario de 8 bits, y los deposite en un arreglo []. Finalmente, elaborar un código de programación que permita enviar los bits del arreglo en orden y en serie siguiendo las siguientes características:
+            <ul>
+                <li>Iniciar el envío de los datos siempre con una señal HIGH (En total se enviarán 9 datos, el primer bit en HIGH y posteriormente los 8 bits de información).</li>
+                <li>Enviar los datos con una duración del pulso predeterminada, ejemplo 1000 ms.</li>
+                <li>Enviar siempre la misma cantidad de bits.</li>
+            </ul>
+        </li>
+        <li>Utilizando un segundo Arduino, diseñar una función que permita adquirir el valor en bits de la señal de comunicación del Arduino anterior, procesarla y convertirla en un dato decimal que finalmente enviará al monitor serial.</li>
+    </ul>
+
+    <h2>Resultados</h2><br>
+    <video width="640" height="360" controls>
+        <source src="/assets/Teoria/Videos/Practica1_1.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <video width="640" height="360" controls>
+        <source src="/assets/Teoria/Videos/Practica1_2.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <video width="640" height="360" controls>
+        <source src="/assets/Teoria/Videos/Practica1_3.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <video width="640" height="360" controls>
+        <source src="/assets/Teoria/Videos/Practica1_4.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <video width="640" height="360" controls>
+        <source src="/assets/Teoria/Videos/Practica2_1.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <video width="640" height="360" controls>
+        <source src="/assets/Teoria/Videos/Practica2_2.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <video width="640" height="360" controls>
+        <source src="/assets/Teoria/Videos/Practica3.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <video width="640" height="360" controls>
+        <source src="/assets/Teoria/Videos/Practica4.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+
+    <h2>Conclusiones</h2><br>
+    A lo largo de esta práctica, logramos desarrollar y simular varios proyectos utilizando Arduino en Tinkercad. Estos ejercicios nos permitieron aplicar conceptos teóricos en un entorno práctico, fortaleciendo nuestras habilidades en programación y diseño de circuitos. La simulación en Tinkercad nos brindó una excelente oportunidad para experimentar y aprender sin el riesgo de dañar componentes físicos. Al finalizar estos ejercicios, obtuvimos una mejor comprensión de cómo programar y controlar dispositivos electrónicos con Arduino, preparándonos para proyectos más complejos en el futuro.
+    <h2>Referencias</h2><br>
+    <p>No hay referencias</p>
+    <h2>Descargables</h2><br>
+    <p>No hay descargables</p>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

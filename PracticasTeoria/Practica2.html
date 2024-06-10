@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes digitales - Victor & Erick</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portafolio web - Redes digitales de datos y Laboratorio.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Informacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+ 
+    <!-- Main content -->
+    <h1>Práctica: Investigación elementos de una red local  </h1><br>
+    <h2>Resumen</h1><br>
+    <p>En esta investigación, exploramos dos modelos fundamentales en la comprensión y diseño de redes de comunicación: el Modelo OSI (Open Systems Interconnection) y el Modelo TCP/IP (Transmission Control Protocol/Internet Protocol). Analizamos las capas que componen cada modelo, su propósito y funcionamiento, y comparamos sus características principales. Estos modelos son esenciales para la interoperabilidad y funcionamiento eficiente de las redes locales y globales.</p>
+    <h2>Introducción</h2><br>
+    <p>La comunicación en redes locales y globales se basa en modelos estandarizados que permiten la interacción entre diferentes sistemas y tecnologías. Dos de los modelos más importantes son el Modelo OSI y el Modelo TCP/IP. El Modelo OSI, con sus siete capas, proporciona un marco conceptual detallado para la interconexión de sistemas abiertos, estandarizando las funciones de telecomunicaciones y computación. Por otro lado, el Modelo TCP/IP, con una estructura más simple de cuatro capas, está más estrechamente asociado con los protocolos que permiten la funcionalidad de Internet. Este estudio profundiza en la explicación de cada capa de estos modelos y ofrece una comparación detallada entre ellos.</p>
+    <h2>Desarrollo</h2><br>
+    <h1>Investigación sobre Modelos OSI y TCP/IP</h1>
+
+    <h2>Explicación del Modelo OSI</h2>
+    <p>El Modelo de Interconexión de Sistemas Abiertos (OSI) es un marco conceptual que estandariza las funciones de un sistema de telecomunicaciones o de computación sin tener en cuenta su estructura interna y tecnología. Su objetivo principal es lograr la interoperabilidad de sistemas de comunicación diversos con protocolos estandarizados. El modelo OSI tiene siete capas:</p>
+    <ul>
+        <li><strong>Capa Física:</strong> Se encarga de la transmisión de bits puros a través de un canal de comunicación.</li>
+        <li><strong>Capa de Enlace de Datos:</strong> Proporciona el control de acceso al medio y la corrección de errores para la transmisión confiable de datos.</li>
+        <li><strong>Capa de Red:</strong> Gestiona el direccionamiento y ruteo de los paquetes de datos a través de la red.</li>
+        <li><strong>Capa de Transporte:</strong> Proporciona transferencia confiable de datos entre nodos finales.</li>
+        <li><strong>Capa de Sesión:</strong> Maneja las sesiones de comunicación entre las aplicaciones de red.</li>
+        <li><strong>Capa de Presentación:</strong> Se encarga de la traducción de datos entre el formato de la red y el formato entendible por la aplicación.</li>
+        <li><strong>Capa de Aplicación:</strong> Proporciona servicios de red directamente a las aplicaciones del usuario.</li>
+    </ul>
+
+    <h2>Explicación del Modelo TCP/IP</h2>
+    <p>El modelo TCP/IP, a diferencia del modelo OSI, tiene una estructura más simple con solo cuatro capas y está más estrechamente asociado con los protocolos que lo implementan. Las capas del modelo TCP/IP son:</p>
+    <ul>
+        <li><strong>Capa de Enlace:</strong> Equivalente a las capas física y de enlace de datos del modelo OSI, se encarga del enlace físico y del control del acceso al medio.</li>
+        <li><strong>Capa de Internet:</strong> Equivalente a la capa de red del modelo OSI, gestiona la dirección y el ruteo de los paquetes.</li>
+        <li><strong>Capa de Transporte:</strong> Similar a la del modelo OSI, proporciona la transferencia confiable de datos entre nodos finales. Los principales protocolos son TCP y UDP.</li>
+        <li><strong>Capa de Aplicación:</strong> Combina las funciones de las capas de sesión, presentación y aplicación del modelo OSI, y proporciona servicios de red directamente a las aplicaciones del usuario.</li>
+    </ul>
+
+    <h2>Tabla Comparativa entre ambos Modelos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Característica</th>
+                <th>Modelo OSI</th>
+                <th>Modelo TCP/IP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Número de capas</td>
+                <td>7</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Capas</td>
+                <td>Física, Enlace de Datos, Red, Transporte, Sesión, Presentación, Aplicación</td>
+                <td>Enlace, Internet, Transporte, Aplicación</td>
+            </tr>
+            <tr>
+                <td>Independencia de protocolos</td>
+                <td>Alta, especifica qué debe hacer cada capa sin definir cómo hacerlo</td>
+                <td>Baja, está muy ligado a los protocolos que lo implementan</td>
+            </tr>
+            <tr>
+                <td>Complejidad</td>
+                <td>Alta, debido a la separación en siete capas y la especificación detallada de cada una</td>
+                <td>Menor, más simple y directa</td>
+            </tr>
+            <tr>
+                <td>Flexibilidad</td>
+                <td>Alta, se puede adaptar a diferentes tecnologías y protocolos</td>
+                <td>Menor, principalmente utilizado para Internet y sus tecnologías</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Explicación de cada una de las capas en el Modelo OSI y TCP/IP</h2>
+    <h3>Modelo OSI</h3>
+    <ul>
+        <li><strong>Capa Física:</strong> Define las características eléctricas y físicas del hardware que se conecta a la red.</li>
+        <li><strong>Capa de Enlace de Datos:</strong> Asegura una transmisión libre de errores entre dos nodos conectados directamente.</li>
+        <li><strong>Capa de Red:</strong> Determina cómo los datos se transfieren entre dispositivos en diferentes redes.</li>
+        <li><strong>Capa de Transporte:</strong> Garantiza que los datos se transfieran correctamente entre sistemas de extremo a extremo.</li>
+        <li><strong>Capa de Sesión:</strong> Administra el diálogo y la sincronización entre las aplicaciones.</li>
+        <li><strong>Capa de Presentación:</strong> Traduce los datos a un formato que la aplicación pueda entender.</li>
+        <li><strong>Capa de Aplicación:</strong> Proporciona servicios de red a las aplicaciones del usuario.</li>
+    </ul>
+
+    <h3>Modelo TCP/IP</h3>
+    <ul>
+        <li><strong>Capa de Enlace:</strong> Maneja el hardware de la red y la transmisión de datos a través de un enlace específico.</li>
+        <li><strong>Capa de Internet:</strong> Se encarga de mover los paquetes de un nodo a otro en diferentes redes.</li>
+        <li><strong>Capa de Transporte:</strong> Asegura la transmisión correcta y ordenada de datos entre aplicaciones.</li>
+        <li><strong>Capa de Aplicación:</strong> Proporciona los protocolos que las aplicaciones utilizan para comunicarse entre sí (HTTP, FTP, SMTP, etc.).</li>
+    </ul>
+
+
+    <h2>Segunda investigación</h2>
+    <h2>Tabla Comparativa de los Elementos de una Red Local</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Elemento</th>
+            <th>Descripción</th>
+            <th>Activo</th>
+            <th>Caso de Uso</th>
+            <th>Foto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Computadora</td>
+            <td>Dispositivo que se conecta a la red para enviar y recibir datos.</td>
+            <td>Sí</td>
+            <td>Navegación web, correo electrónico, aplicaciones de oficina.</td>
+            <td><!-- Imagen de Computadora --></td>
+        </tr>
+        <tr>
+            <td>Repetidor</td>
+            <td>Dispositivo que amplifica o regenera señales para extender el alcance de la red.</td>
+            <td>No</td>
+            <td>Ampliar la cobertura de una red en un edificio grande.</td>
+            <td><!-- Imagen de Repetidor --></td>
+        </tr>
+        <tr>
+            <td>Hub</td>
+            <td>Dispositivo que concentra conexiones múltiples, retransmitiendo datos a todos los puertos.</td>
+            <td>No</td>
+            <td>Redes pequeñas donde el tráfico es bajo y controlable.</td>
+            <td><!-- Imagen de Hub --></td>
+        </tr>
+        <tr>
+            <td>Switch</td>
+            <td>Dispositivo que conecta dispositivos en una red y filtra datos para enviarlos solo a los puertos necesarios.</td>
+            <td>No</td>
+            <td>Redes medianas a grandes para reducir colisiones y mejorar la eficiencia.</td>
+            <td><!-- Imagen de Switch --></td>
+        </tr>
+        <tr>
+            <td>Bridge</td>
+            <td>Dispositivo que conecta y filtra el tráfico entre dos segmentos de red.</td>
+            <td>No</td>
+            <td>Interconectar diferentes redes locales con distintos protocolos.</td>
+            <td><!-- Imagen de Bridge --></td>
+        </tr>
+        <tr>
+            <td>Router</td>
+            <td>Dispositivo que dirige el tráfico de datos entre diferentes redes y proporciona acceso a Internet.</td>
+            <td>Sí</td>
+            <td>Conectar una red local a Internet y dirigir el tráfico entre subredes.</td>
+            <td><!-- Imagen de Router --></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Matriz de Interconexión y Tipo de Cable</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Desde \ Hacia</th>
+            <th>Computadora</th>
+            <th>Repetidor</th>
+            <th>Hub</th>
+            <th>Switch</th>
+            <th>Bridge</th>
+            <th>Router</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Computadora</td>
+            <td>-</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>Directo</td>
+        </tr>
+        <tr>
+            <td>Repetidor</td>
+            <td>Directo</td>
+            <td>-</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>Directo</td>
+        </tr>
+        <tr>
+            <td>Hub</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>-</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>Directo</td>
+        </tr>
+        <tr>
+            <td>Switch</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>-</td>
+            <td>Directo</td>
+            <td>Directo</td>
+        </tr>
+        <tr>
+            <td>Bridge</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>-</td>
+            <td>Directo</td>
+        </tr>
+        <tr>
+            <td>Router</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>Directo</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Notas sobre los tipos de cables</h2>
+<p><strong>Cable Directo (Straight-through):</strong> Utilizado para conectar diferentes dispositivos entre sí, como computadoras a switches, repetidores, hubs, bridges y routers.</p>
+<p><strong>Cable Cruzado (Crossover):</strong> Utilizado principalmente para conectar dispositivos similares entre sí, como conectar dos computadoras directamente.</p>
+
+
+    <h2>Conclusiones</h2><br>
+    <p>Al finalizar esta investigación, hemos adquirido una comprensión clara de los modelos OSI y TCP/IP, incluyendo sus capas y funciones específicas. El Modelo OSI, con su alta independencia de protocolos y complejidad, ofrece una gran flexibilidad y detallada especificación de cada capa. En contraste, el Modelo TCP/IP, aunque menos flexible y más ligado a sus protocolos, proporciona una solución más directa y simplificada para la comunicación en Internet. La comparación entre estos modelos nos permite apreciar sus fortalezas y debilidades, y entender cómo se aplican en la configuración y operación de redes locales. Esta comprensión es crucial para diseñar y gestionar redes eficientes y compatibles en diferentes entornos tecnológicos.</p>
+    <p>No hay referencias</p>
+    <h2>Descargables</h2><br>
+    <p>No hay descargables</p>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
