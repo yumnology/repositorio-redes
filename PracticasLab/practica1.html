@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes digitales - Victor & Erick</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portafolio web - Redes digitales de datos y Laboratorio.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Informacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <h1>Práctica: Wifi ESP32 Entradas y Salidas Digitales</h1><br>
+    <h2>Resumen</h1>
+    <p>En esta primera abordamos la configuración y programación del 
+        módulo Wifi ESP32, enfocándonos en la comprensión y uso de sus entradas y salidas digitales. A través de una serie 
+        de pasos detallados, aprenderemos a configurar el entorno de desarrollo Arduino IDE, revisar el pinout y GPIO disponibles del 
+        ESP32, y desarrollar diversos programas para el control de un LED y el uso de botones.</p>
+    <h2>Introducción</h2><br>
+    <p>La práctica con el módulo Wifi ESP32 nos
+         ofrece la oportunidad de familiarizarnos con las entradas y salidas digitales de este dispositivo. Esta guía nos proporciona 
+         las instrucciones necesarias para configurar el IDE de Arduino para el NodeMCU y ESP32, y desarrollar programas que nos permitan
+          encender y apagar un LED mediante programación, retardos y el uso de botones. Además, se presenta una lista de materiales esenciales para llevar a cabo esta práctica de manera efectiva.</p>
+    <h2>Materiales</h2>
+    <ul>
+        <li>ESP32 WROOM32</li>
+        <li>LED, resistencia de 220 Ohms</li>
+        <li>4 Botones y 4 resistencias de 1K Ohms</li>
+        <li>Protoboard y cables</li>
+    </ul>
+    <h2>Desarrollo</h2><br>
+    <h3>Objetivo general</h3><br>
+    <p>Conocer, identificar y comprobar el funcionamiento de las entradas y salidas digitales en el módulo Wifi ESP32.</p>
+    <h3>Objeetivos específicos</h3>
+    <ul>
+        <li>
+            Utilizando la información e instrucciones de la presentación, configurar el IDE de Arduino para poder programar el NodeMCU directamente desde el entorno de Arduino, instalando las herramientas necesarias:
+            <ul>
+                <li><a href="http://arduino.esp8266.com/stable/package_esp8266com_index.json" target="_blank">http://arduino.esp8266.com/stable/package_esp8266com_index.json</a></li>
+                <li><a href="https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/" target="_blank">https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/</a></li>
+            </ul>
+        </li>
+        <li>
+            Revisar el pinout y los GPIO disponibles para el uso del NodeMCU:
+            <ul>
+                <li><a href="https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/" target="_blank">https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/</a></li>
+                <li><a href="https://randomnerdtutorials.com/esp32-pinout-reference-gpios/" target="_blank">https://randomnerdtutorials.com/esp32-pinout-reference-gpios/</a></li>
+            </ul>
+        </li>
+        <li>Desarrollar un programa de encendido de un LED mediante programación.</li>
+        <li>Desarrollar un programa de apagado de un LED mediante programación.</li>
+        <li>Desarrollar un programa de encendido y apagado de un LED mediante retardos.</li>
+        <li>Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones.</li>
+        <li>Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR.</li>
+        <li>Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND.</li>
+    </ul>
+    <p>Para esta práctica usamos la plataforma Wowki para desarrollar los ejercicios; posteriormente los hicimos en físico
+        usando una ESP32 Wroom32.
+    </p>
+    <h2>Resultados</h2><br>
+    <h4>Ejercicios en Wowki</h4>
+    <h5>Encendido de un LED</h5>
+    <video width="640" height="360" controls>
+        <source src="/assets/Lab/Practica1/Videos/1. Encendido_led.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h5>Apagado de un LED</h5>
+    <video width="640" height="360" controls>
+        <source src="/assets/Lab/Practica1/Videos/2. Encendido_apagado.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h5>Ecendido y apagado de un LED mediante retardos</h5>
+    <video width="640" height="360" controls>
+        <source src="/assets/Lab/Practica1/Videos/3. Encendido_apagado_retardo.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h5>Encendido y apagado de un LED mediante un botón</h5>
+    <video width="640" height="360" controls>
+        <source src="/assets/Lab/Practica1/Videos/4. Boton_led.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h5>Encendido y apagado de un led mediante botones y condicional OR</h5>
+    <video width="640" height="360" controls>
+        <source src="/assets/Lab/Practica1/Videos/5. Boton_led_or.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h5>Encendido y apagado de un led mediante botones y condicional AND</h5>
+    <video width="640" height="360" controls>
+        <source src="/assets/Lab/Practica1/Videos/6. Boton_led_and.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <h4>Ejercicios en físico</h4>
+    <h5>Encendido de un LED</h5>
+    <video width="640" height="360" controls>
+        <source src="/assets/Lab/Practica1/Videos/Fisico_led.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h5>Ecendido y apagado de un LED mediante retardos</h5>
+    <video width="640" height="360" controls>
+        <source src="/assets/Lab/Practica1/Videos/fisico_led_parpadeo.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h5>Encendido y apagado de un LED mediante un botón</h5>
+    <video width="640" height="360" controls>
+        <source src="/assets/Lab/Practica1/Videos/Fisico_boton_led.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h5>Encendido y apagado de un led mediante botones y condicional OR</h5>
+    <video width="640" height="360" controls>
+        <source src="/assets/Lab/Practica1/Videos/Fisico_boton_led_or.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+    <h5>Encendido y apagado de un led mediante botones y condicional AND</h5>
+    <video width="640" height="360" controls>
+        <source src="/assets/Lab/Practica1/Videos/Fisico_boton_led_and.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video><br>
+
+    <h2>Conclusiones</h2><br>
+    <p>A través de esta práctica, adquirimos una comprensión sólida de cómo funcionan las entradas y salidas digitales en el ESP32. 
+        La configuración del entorno de desarrollo y la implementación de diversos programas nos permitieron no solo encender y apagar 
+        un LED, sino también interactuar con el módulo utilizando botones y condicionales. Esto nos proporcionó una base práctica que 
+        podemos aplicar a proyectos más complejos en el futuro, fortaleciendo nuestras habilidades en programación y manejo de hardware
+         digital.</p>
+    <h2>Referencias</h2><br>
+    <p>Sin referencias.</p>
+    <h2>Descargables</h2><br>
+    <ul>
+        <li><a href="/assets/Lab/Practica1/Files/Código led 1.txt" download>Código de led encendido</a></li>
+        <li><a href="/assets/Lab/Practica1/Files/Código led 2.txt" download>Código de led encendido con retardos</a></li>
+        <li><a href="/assets/Lab/Practica1/Files/Código botón 1.txt" download>Código de led encendido con botón</a></li>
+        <li><a href="/assets/Lab/Practica1/Files/Código botón OR.txt" download>Código de led encendido con botones y OR</a></li>
+        <li><a href="/assets/Lab/Practica1/Files/Código botón AND.txt" download>Código de led encendido con botones y AND</a></li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
